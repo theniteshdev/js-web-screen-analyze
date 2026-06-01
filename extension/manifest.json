@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Scroll Image Analyzer",
+  "version": "1.0",
+  "description": "Scrolls pages, captures snapshots, and sends them to a vision API server.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

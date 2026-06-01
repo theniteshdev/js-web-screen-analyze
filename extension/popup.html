@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 320px;
+            font-family: Arial, sans-serif;
+            padding: 12px;
+            margin: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .field {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+            padding: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #downloadBtn {
+            background-color: #28a745;
+            display: none;
+        }
+
+        #output {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 12px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .status {
+            font-size: 11px;
+            color: #666;
+            font-style: italic;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Vision Server Client</h3>
+
+    <div class="field">
+        <label for="scrollTimes">Number of Scrolls:</label>
+        <input type="number" id="scrollTimes" value="3" min="1" max="20">
+    </div>
+
+    <button id="startBtn">Scroll & Analyze</button>
+    <div id="statusText" class="status">Ready</div>
+
+    <textarea id="output" readonly placeholder="Analysis will appear here..."></textarea>
+    <button id="downloadBtn">Download Response (.txt)</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
