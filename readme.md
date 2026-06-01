@@ -21,7 +21,8 @@ An end-to-end system consisting of a lightweight Chrome Extension (Manifest V3) 
 1. Navigate to your server project directory:
 
 ```bash
-
+git clone https://github.com/theniteshdev/js-web-screen-analyze.git
+cd js-web-screen-analyze
 ```
 
 cd server
