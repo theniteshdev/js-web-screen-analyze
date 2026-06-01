@@ -1,7 +1,3 @@
-Here is a clean, comprehensive, and professional `README.md` designed specifically for your project.
-
----
-
 # Web Scrolling Vision Analyzer
 
 An end-to-end system consisting of a lightweight Chrome Extension (Manifest V3) and a Node.js Express backend server. The extension automates page scrolling, captures a baseline visual screenshot of the viewport, encodes it to Base64, and transmits it to the server. The backend processes the payload using OpenRouter's vision intelligence models (e.g., Gemini or GPT-4o) and returns an analysis of what is visible on the screen.
